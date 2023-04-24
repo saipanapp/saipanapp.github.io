@@ -4,7 +4,7 @@ import Services from './components/Cards';
 import Footer from './components/Footer';
 import Home from './components/Hero';
 import Navbar from './components/Navbar';
-import Newsletter from './components/Newsletter';
+import Contact from './components/Newsletter';
 import { Element } from 'react-scroll';
 
 function App() {
@@ -14,11 +14,12 @@ function App() {
       <Element name="home">
         <Home />
       </Element>
-       
       <Element name="services">
         <Services />
       </Element>
-       
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
     </div>
   );

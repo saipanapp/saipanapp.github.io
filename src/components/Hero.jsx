@@ -1,5 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -24,7 +25,14 @@ const Home = () => {
           </p>
         </div>
         <p className='md:text-2xl text-xl font-bold text-gray-500'>MHS编程俱乐部, 曾获奖2020,2021,2022国会软件开发CNMI第一名</p>
-        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
+        <Link
+          to="services"
+          smooth={true}
+          duration={500}
+          className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black cursor-pointer'
+        >
+          查看服务
+        </Link>
       </div>
     </div>
   );
