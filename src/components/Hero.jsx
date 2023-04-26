@@ -5,16 +5,16 @@ import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <div className='text-white'>
-      <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
+      <div className=' mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
         <p className='text-[#00df9a] font-bold p-2'>
           电子与计算机工程
         </p>
         <Typed
           className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
-            strings={['高效', '质量', '安全']}
-            typeSpeed={120}
-            backSpeed={140}
-            loop
+          strings={['高效', '质量', '安全']}
+          typeSpeed={120}
+          backSpeed={140}
+          loop
         />
         <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
           专注软件开发

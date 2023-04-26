@@ -1,4 +1,5 @@
 import React from 'react';
+import wechatqrcode from '../assets/wechatqrcode.jpg';
 
 const Contact = () => {
   return (
@@ -14,10 +15,13 @@ const Contact = () => {
 
 
         <div className='my-4'>
-          <div className='flex flex-col sm:flex-row items-center justify-between w-full'>
-            <span className='text-[#00df9a]'>微信二维码</span>
+          <div className=''>
+            <span className='text-[#00df9a] text-2xl font-bold'>微信二维码</span>
+            <div className=''>
+              <img src={wechatqrcode} alt="Logo" width={200} height={100} className='' />
+            </div>
           </div>
-        
+
         </div>
 
         {/* <div className='my-4'>

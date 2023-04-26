@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
-
+import logo from '../assets/logo1.ico'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,16 +12,17 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>塞班软件</h1>
+      <img src={logo} alt="" width={45} className='mr-3' />
+      <h1 className='w-full text-3xl font-bold text-[#00df9a] italic'>塞班软件</h1>
       <ul className='hidden md:flex'>
         <li className='whitespace-nowrap p-5'>
-          <Link className="cursor-pointer"  activeClass="active" to="home" spy={true} smooth={true} duration={500}>封面</Link>
+          <Link className="cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} duration={500}>封面</Link>
         </li>
         <li className='whitespace-nowrap p-5'>
-          <Link className="cursor-pointer"  activeClass="active" to="services" spy={true} smooth={true} duration={500}>服务</Link>
+          <Link className="cursor-pointer" activeClass="active" to="services" spy={true} smooth={true} duration={500}>服务</Link>
         </li>
         <li className='whitespace-nowrap p-5'>
-          <Link className="cursor-pointer"  activeClass="active" to="contact" spy={true} smooth={true} duration={500}>联系</Link>
+          <Link className="cursor-pointer" activeClass="active" to="contact" spy={true} smooth={true} duration={500}>联系</Link>
         </li>
       </ul>
 
@@ -53,10 +54,11 @@ const Navbar = () => {
               ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-40"
               : "ease-in-out duration-500 fixed left-[-100%] z-40"
           }
-        >
-          <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-            塞班软件
-          </h1>
+        > <div className='flex flex-row'>
+            <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
+              塞班软件
+            </h1>
+          </div>
           <li className="p-4 border-b border-gray-600">
             <Link
               className="cursor-pointer"
