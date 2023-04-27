@@ -8,6 +8,7 @@ import { Element } from 'react-scroll';
 function App() {
   return (
     <div className='overflow-x-hidden	'>
+
       <Navbar />
       <Element name="home">
         <Home />
