@@ -12,8 +12,10 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <img src={logo} alt="" width={45} className='mr-3' />
-      <h1 className='w-full text-3xl font-bold text-[#00df9a] italic'>塞班软件</h1>
+      <div className="flex md:mb-0 mb-10">
+        <img src={logo} alt="" width={50} className='' />
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] italic my-auto '>塞班软件</h1>
+      </div>
       <ul className='hidden md:flex'>
         <li className='whitespace-nowrap p-5'>
           <Link className="cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} duration={500}>封面</Link>
@@ -41,6 +43,7 @@ const Navbar = () => {
             <Link className="cursor-pointer"  activeClass="active" to="contact" spy={true} smooth={true} duration={500}>联系</Link>
           </li>
       </ul> */}
+
       <div className="relative md:hidden">
         <div
           onClick={handleNav}
